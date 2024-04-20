@@ -16,7 +16,9 @@ while True:
   print("4) salir")
   opcion= str(input("ingrese una opcion: "))
   if opcion == "1":
+            print("--------------------------------------------------------------------------------------")
             tipoE = input("Ingrese el tipo de evento (1)examenes / (2)reuniones / (3)trabajos_practicos): ")
+            print("--------------------------------------------------------------------------------------")
             if tipoE== "1":
                 tipo,nombreEvento,fecha,descripcion,materia = Obtener_detalles_evento()
                 examen = Examen(tipo,nombreEvento,fecha,descripcion,materia)
